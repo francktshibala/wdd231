@@ -167,6 +167,9 @@ button {
     cursor: pointer;
     
 }
+#categories {
+    justify-self: center;
+}
 
 #course-list {
     display: flex;
