@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+:root {
+        --primary-color: #003F88;
+         --secondary-coloor: #00509D;
+        --accent1-color: #0077B6;
+        --accent2-color: #FEFCFB;
+        --accent3-color: #FDC500;
+        
+        --nav-background-color: #00296B;
+        --nav-link-color: #FEFCFB;
+        --nav-hover-link-color: #001F54;
+        --nav-hover-background-color: #FEFCFB;
+
+        --heading-font: Bree Serif, serif;
+       
+   
+}
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: var(--heading-font);
+    margin:  10px;
+    color: var(--accent2-color);
+    background-color: var(--secondary-coloor);
+}
+
+
+
+/* mobile **************************/
+header {
+	
+	display: block ;
+	align-items:center;
+	justify-content:center;
+	padding: 20px;
+	border: var(--accent1-color);
+    
+    
+}
+
+
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+   
+
+}
+
+ h1 {
+	margin-left: 20px;
+}
+
+#total-credits {
+    margin-left: 20px;
+}
+
+
+
+nav {
+	
+	margin: 0 auto;
+	
+}
+nav ul {
+	list-style-type: none;
+}
+nav a {
+	display: block;
+	color: var(--accent2-color);
+	text-align: center;
+	padding: 1rem;
+	text-decoration: none;
+}
+
+nav a:hover {
+	text-decoration:overline;
+}
+
+
+.active::before { 
+	content: "⚽";  /* just a wayfinding symbol for the user */
+}
+
+#menu {
+	display: block;
+	font-size: 2rem;
+	font-weight:700;
+	text-decoration: none;
+	padding: .5rem .75rem;
+	background-color: var(--accent2-color);
+	color:var(--primary-color);
+}
+
+#menu::before {
+	content: "≡";
+}
+
+nav {
+	background-color: var(--accent1-color);
+}
+.navigation {
+	list-style: none;
+	
+}
+
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	font-weight: 700;
+	transition: 0.5s;
+	font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.navigation a:hover, navigation a:active {
+	color: white;
+	background-color:var(--accent3-color);
+}
+
+.show li {
+	display: block;
+}
+
+#menu.show::before {
+	content: "X";
+}
+
+footer p {
+	margin: 0.25rem;
+	border: 1px solid var(--primary-color);
+	padding: 0.5rem 0.75rem;
+	background-color: var(--accent1-color);
+}
+
+.highlight {
+	
+	font-weight: 700;
+	font-family: hebrew;
+}
+
+
+
+/*main*/
+#buttons {
+    /* margin-bottom: 20px; */
+    justify-self: center;
+   
+}
+
+
+
+button {
+    padding: 8px 12px;
+    margin: 5px;
+    cursor: pointer;
+    
+}
+
+#course-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.course {
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.completed {
+    background-color:var(--accent1-color) ;
+    color: var(--accent2-color);
+    border-color: var(--accent2-color);
+}
+
+.incomplete {
+    background-color: var(--accent3-color);
+    color: var(--primary-color);
+    border-color: var(--accent1-color);
+}
+
+
+/* Larger Views ******************************/
+@media (min-width: 640px) {
+	nav ul {
+		display: flex;
+        justify-content: space-evenly;
+	}
+
+    .navigation li {
+		display: block;
+		flex: 1 1 100%;
+       
+	}
+
+    .navigation a {
+        color: var(--accent2-color);
+    }
+
+    #menu {
+		display: none; /* hide hamburger button */
+	}
+
+    .navigation {
+		flex-direction: row;
+	}
+
+    #course-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    button {
+        font-size: 18px;
+    }
+
+    .course {
+        padding: 20px;
+    }
+
+    h1  {
+        text-align: center;
+    }
+    
+    #total-credits {
+        text-align: center;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    body {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+
+    .completed {
+        background-color: var(--accent2-color);
+        color: var(--primary-color);
+    }
+}
+
+	
+
+	
+
+	

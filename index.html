@@ -4,8 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="scripts/index.js" defer></script>
+    <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
+<header>
+<a id="menu" href="#"></a>
+<nav>
+	<ul class="navigation">
+		<li><a href="#" class="active">Home</a></li>
+		<li><a href="#">Chamber</a></li>
+		<li><a href="#">GitHub Profile</a></li>
+		<li><a href="#">LinkedIn</a></li>
+		
+	</ul>
+</nav>
+</header>
+
+    <main>
+        
+        <h1>Web and Computer Programming Certificate</h1>
+        <p id="total-credits">Total Credits: 0</p>
+        <div id="buttons">
+            <button onclick="displayCourses('all')">All Courses</button>
+            <button onclick="displayCourses('WDD')">WDD Courses</button>
+            <button onclick="displayCourses('CSE')">CSE Courses</button>
+        </div>
+        <div id="course-list"></div>
+    
+       
+    </main>
+    <footer>
+        <p>
+            &copy; <span id="currentYear"></span>⚽Franck Tshibala⚽ DRC Kinshasa
+        </p>
+        <p id="lastModified">Last Modified</p>
+    </footer>
     
 </body>
 </html>
