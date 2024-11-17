@@ -1,0 +1,67 @@
+[
+    {
+      "name": "Mountainview Tech Solutions",
+      "address": "123 Innovation Drive, Sandy, UT 84070",
+      "phone": "(801) 555-1234",
+      "website": "https://www.mountainviewtech.com",
+      "image": "mountainviewtech.png",
+      "membershipLevel": 3,
+      "services": "IT consulting, software development, cybersecurity"
+    },
+    
+    {
+      "name": "Summit Fitness Center",
+      "address": "890 Fitness Loop, Sandy, UT 84070",
+      "phone": "(801) 555-7532",
+      "website": "https://www.summitfitness.com",
+      "image": "summitfitness.png",
+      "membershipLevel": 2,
+      "services": "Gym, fitness classes, personal training"
+    },
+    {
+      "name": "Helping Hands Food Bank",
+      "address": "321 Community Drive, Sandy, UT 84070",
+      "phone": "(801) 555-9988",
+      "website": "https://www.helpinghandsutah.org",
+      "image": "helpinghands.jpeg",
+      "membershipLevel": 1,
+      "services": "Food distribution, community support"
+    },
+    {
+      "name": "Sandy Arts Council",
+      "address": "654 Creative Way, Sandy, UT 84070",
+      "phone": "(801) 555-1357",
+      "website": "https://www.sandyarts.org",
+      "image": "sandyartscouncil.jpeg",
+      "membershipLevel": 1,
+      "services": "Community arts programs, events"
+    },
+    {
+      "name": "Bright Futures Preschool",
+      "address": "987 Learning Lane, Sandy, UT 84092",
+      "phone": "(801) 555-8642",
+      "website": "https://www.brightfuturesutah.com",
+      "image": "brightfutures.jpeg",
+      "membershipLevel": 1,
+      "services": "Early childhood education"
+    },
+    {
+      "name": "QuickFix Auto Repair",
+      "address": "741 Car Care Circle, Sandy, UT 84070",
+      "phone": "(801) 555-3321",
+      "website": "https://www.quickfixauto.com",
+      "image": "quickfixauto.jpeg",
+      "membershipLevel": 1,
+      "services": "Vehicle repair, maintenance"
+    },
+    {
+      "name": "GreenLeaf Landscaping",
+      "address": "159 Garden Path, Sandy, UT 84092",
+      "phone": "(801) 555-4428",
+      "website": "https://www.greenleaflandscape.com",
+      "image": "greenleaflandscape.jpeg",
+      "membershipLevel": 1,
+      "services": "Residential and commercial landscaping"
+    }
+    
+  ]

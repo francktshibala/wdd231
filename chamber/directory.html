@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Directory of local businesses in the Chamber of Commerce.">
+    <meta name="author" content="Franck Tshibala">
+    <meta property="og:title" content="Chamber of Commerce Directory">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="chamber/images/Screenshot 2024-05-28 122610.png">
+    <meta property="og:url" content="chamber/directory.html">
+    <title>Chamber of Commerce Directory</title>
+    <link rel="icon" href="images/favicon-32x32.png">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/directory.css">
+    <script defer src="scripts/directory.js"></script>
+</head>
+<body>
+    
+
+      <header>
+        <div class="top-header">
+          <img src="images/main-logo.png" alt="logo" width="100" height="100">
+          <div>
+            <h1>Franck Tshibala</h1>
+            <h1>Chamber of Commerce</h1>
+          </div>
+        </div>
+        <a id="menu" href="#"></a>
+        <nav>
+          <ul class="navigation">
+            <li><a href="https://francktshibala.github.io/wdd231/">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html" class="active">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+          </ul>
+        </nav>
+      </header>
+      
+      <main>
+        <section class="view-toggle">
+          <h2>Toggle View</h2>
+          <button id="grid-view">⏹️Grid View</button>
+          <button id="list-view">📄List View</button>
+        </section>
+        
+        <section class="directory grid-view">
+          <h2>Business Directory</h2>
+        </section>
+      </main>
+
+      <footer>
+        <p>Contact us: info@chamber.com | (555) 123-4567</p>
+        <p>Franck Tshibala | WDD 231 | Last Modified: <span id="last-modified"></span></p>
+        <p>&copy; <span id="year"></span> Chamber of Commerce. All rights reserved.</p>
+      </footer>
+    
+</body>
+</html>
