@@ -40,3 +40,12 @@ async function loadMembers() {
   
   loadMembers();
 
+  const currentYear = new Date().getFullYear();
+document.getElementById('currentYear').innerText = ` ${currentYear}`;
+
+// Get the last modified date of the document
+const lastModified = document.lastModified;
+
+// Set the last modified date in the second paragraph
+document.getElementById('lastModified').innerText = `Last Modified: ${lastModified}`;
+document.body.style.fontFamily = "'Bree Serif', serif";
