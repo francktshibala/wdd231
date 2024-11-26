@@ -104,7 +104,7 @@ function displaySpotlights() {
     const spotlightMembers = members.filter(m => m.level === 'gold' || m.level === 'silver');
     const randomSpotlights = [];
 
-    while (randomSpotlights.length < 2) {
+    while (randomSpotlights.length < 3) {
         const randomIndex = Math.floor(Math.random() * spotlightMembers.length);
         if (!randomSpotlights.includes(spotlightMembers[randomIndex])) {
             randomSpotlights.push(spotlightMembers[randomIndex]);
