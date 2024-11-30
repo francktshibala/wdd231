@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chamber of Commerce Landing Home Page">
+    <meta name="author" content="Franck Tshibala">
+    <meta property="og:title" content="Chamber Home Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="chamber/images/main-logo.png">
+    <meta property="og:url" content="https://francktshibala.github.io/wdd231/chamber/directory.html">
+    <title>Chamber Home Page</title>
+    <link rel="icon" href="images/favicon-32x32.png">
+    <link rel="stylesheet" href="styles/membership-form.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <script defer src="membership-form.css"></script>
+</head>
+
+    
+
+       <!-- Header Section -->
+    <!-- <header>
+        <div class="top-header">
+            <img src="images/main-logo.png" alt="Franckst Chamber of Commerce">
+            <div>
+                <h1>Franck Tshibala</h1>
+                <h1>Chamber of Commerce</h1>
+              </div>
+        </div>
+        <a id="menu" href="#"></a>
+        <nav>
+            <ul class="navigation">
+                <li><a href="https://francktshibala.github.io/wdd231/">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html" class="active">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+              </ul>
+        </nav>
+    </header> -->
+
+    <!-- Hero Section -->
+    
+
+    <!-- Footer Section -->
+
+    <body class="bg-gray-100 p-6">
+        <div class="container mx-auto flex flex-col-reverse lg:flex-row gap-6">
+            <!-- Form Section -->
+            <div class="w-full lg:w-2/3 bg-white p-8 rounded-lg shadow-md">
+                <h1 class="text-2xl font-bold mb-6">Chamber of Commerce Membership Application</h1>
+                
+                <form id="membershipForm" method="get" action="thankyou.html" class="space-y-4">
+                    <!-- Timestamp Hidden Field -->
+                    <input type="hidden" id="timestamp" name="timestamp" 
+                           title="Form Submission Timestamp">
+    
+                    <!-- First Name -->
+                    <label class="block" for="firstName">
+                        <span class="text-gray-700">First Name</span>
+                        <input type="text" id="firstName" name="firstName" 
+                               autocomplete="given-name" 
+                               title="Applicant's First Name" 
+                               required 
+                               class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+                    </label>
+    
+                    <!-- Last Name -->
+                    <label class="block" for="lastName">
+                        <span class="text-gray-700">Last Name</span>
+                        <input type="text" id="lastName" name="lastName" 
+                               autocomplete="family-name" 
+                               title="Applicant's Last Name" 
+                               required 
+                               class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+                    </label>
+    
+                    <!-- Organizational Title -->
+                    <label class="block" for="orgTitle">
+                        <span class="text-gray-700">Organizational Title</span>
+                        <input type="text" id="orgTitle" name="orgTitle" 
+                               autocomplete="organization-title" 
+                               title="Your Title Within Organization" 
+                               pattern="^[a-zA-Z\s-]{7,}$" 
+                               class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+                    </label>
+    
+                    <!-- Email -->
+                    <label class="block" for="email">
+                        <span class="text-gray-700">Email Address</span>
+                        <input type="email" id="email" name="email" 
+                               autocomplete="email" 
+                               title="Your Email Address" 
+                               placeholder="example@company.com" 
+                               required 
+                               class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+                    </label>
+    
+                    <!-- Mobile Phone -->
+                    <label class="block" for="phone">
+                        <span class="text-gray-700">Mobile Phone Number</span>
+                        <input type="tel" id="phone" name="phone" 
+                               autocomplete="tel" 
+                               title="Your Mobile Phone Number" 
+                               required 
+                               class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+                    </label>
+    
+                    <!-- Business/Organization Name -->
+                    <label class="block" for="businessName">
+                        <span class="text-gray-700">Business/Organization Name</span>
+                        <input type="text" id="businessName" name="businessName" 
+                               autocomplete="organization" 
+                               title="Your Business or Organization Name" 
+                               required 
+                               class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+                    </label>
+    
+                    <!-- Membership Level -->
+                    <label class="block" for="membershipLevel">
+                        <span class="text-gray-700">Membership Level</span>
+                        <select id="membershipLevel" name="membershipLevel" 
+                                title="Select Membership Level" 
+                                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+                            <option value="">Select a Membership Level</option>
+                            <option value="np">NP Membership (Non-Profit)</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </label>
+    
+                    <!-- Organization Description -->
+                    <label class="block" for="orgDescription">
+                        <span class="text-gray-700">Organization Description</span>
+                        <textarea id="orgDescription" name="orgDescription" 
+                                  title="Brief Description of Your Organization" 
+                                  rows="4" 
+                                  class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"></textarea>
+                    </label>
+    
+                    <!-- Submit Button -->
+                    <div class="mt-6">
+                        <input type="submit" value="Submit Membership Application" 
+                               class="w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+                    </div>
+                </form>
+            </div>
+    
+            <!-- Membership Cards Section -->
+            <div class="w-full lg:w-1/3 grid grid-cols-1 gap-4">
+                <div class="membership-card bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-4">NP Membership</h3>
+                    <p class="mb-4">Ideal for non-profit organizations.</p>
+                    <button onclick="openModal('npModal')" class="text-indigo-600 hover:underline">Learn More</button>
+                </div>
+    
+                <div class="membership-card bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-4">Bronze Membership</h3>
+                    <p class="mb-4">Entry-level membership with basic benefits.</p>
+                    <button onclick="openModal('bronzeModal')" class="text-indigo-600 hover:underline">Learn More</button>
+                </div>
+    
+                <div class="membership-card bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-4">Silver Membership</h3>
+                    <p class="mb-4">Enhanced benefits for growing organizations.</p>
+                    <button onclick="openModal('silverModal')" class="text-indigo-600 hover:underline">Learn More</button>
+                </div>
+    
+                <div class="membership-card bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-4">Gold Membership</h3>
+                    <p class="mb-4">Comprehensive benefits for established organizations.</p>
+                    <button onclick="openModal('goldModal')" class="text-indigo-600 hover:underline">Learn More</button>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Modals -->
+        <div id="npModal" class="modal hidden fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center">
+            <div class="bg-white p-8 rounded-lg max-w-md">
+                <h2 class="text-2xl font-bold mb-4">NP Membership Benefits</h2>
+                <ul class="list-disc pl-5">
+                    <li>Free membership for non-profit organizations</li>
+                    <li>Basic listing in chamber directory</li>
+                    <li>Access to monthly newsletter</li>
+                </ul>
+                <button onclick="closeModal('npModal')" class="mt-4 bg-indigo-600 text-white py-2 px-4 rounded-md">Close</button>
+            </div>
+        </div>
+
+    
+            
+        </body>
+    
+
+      <!-- <footer>
+        <p>
+            &copy; <span id="currentYear"></span>⚽Franck Tshibala⚽| WDD 231 | Sandy Utah
+        </p>
+        <p  id="lastModified">Last Modified</p>
+        <p>Contact us: info@chamber.com | (555) 123-4567</p>
+        <p> Chamber of Commerce. All rights reserved.</p>
+      </footer>
+    
+</body> -->
+</html>

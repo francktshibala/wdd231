@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Join Page">
+        <meta name="author" content="Franck Tshibala">
+        <meta property="og:title" content="Join Page">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="chamber/images/main-logo.png">
+        <meta property="og:url" content="https://francktshibala.github.io/wdd231/chamber/directory.html">
+        <title>Join Page</title>
+        <link rel="icon" href="images/favicon-32x32.png">
+        <link rel="stylesheet" href="styles/join.css">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <script defer src="scripts/join.js"></script>
+    </head>
+    
+    
+<body>
+
+    <header>
+        <div class="top-header">
+            <img src="images/main-logo.png" alt="Franckst Chamber of Commerce">
+            <div>
+                <h1>Franck Tshibala</h1>
+                <h1>Chamber Membership</h1>
+              </div>
+        </div>
+        <a id="menu" href="#"></a>
+        <nav>
+            <ul class="navigation">
+                <li><a href="https://francktshibala.github.io/wdd231/">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html" class="active">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+              </ul>
+        </nav>
+    </header>
+    
+
+    <main>
+        <div class="main-content">
+        <div>
+        <section class="form-section">
+            <h2>Membership Application</h2>
+            <form action="thankyou.html" method="get">
+                <label>
+                    First Name:
+                    <input type="text" name="first_name" title="Enter your first name" required autocomplete="given-name">
+                </label>
+                <label>
+                    Last Name:
+                    <input type="text" name="last_name" title="Enter your last name" required autocomplete="family-name">
+                </label>
+                <label class="hardones">
+                    Organizational Title:
+                    <input type="text" name="organization_title" title="Enter your title" autocomplete="organization-title" 
+                           pattern="[A-Za-z\s-]{7,}" placeholder="e.g., Manager" required>
+                </label>
+                <label class="hardones">
+                    Email:
+                    <input type="email" name="email" title="Enter a valid email address" required autocomplete="email" placeholder="example@email.com">
+                </label>
+                <label>
+                    Mobile Phone:
+                    <input type="tel" name="phone" title="Enter your mobile phone number" required autocomplete="tel">
+                </label>
+                <label>
+                    Organization Name:
+                    <input type="text" name="organization_name" title="Enter your organization name" required autocomplete="organization">
+                </label>
+                <label>
+                    Membership Level:
+                    <select name="membership_level" required>
+                        <option value="" disabled selected>Select your membership level</option>
+                        <option value="NP Membership">NP Membership</option>
+                        <option value="Bronze Membership">Bronze Membership</option>
+                        <option value="Silver Membership">Silver Membership</option>
+                        <option value="Gold Membership">Gold Membership</option>
+                    </select>
+                </label>
+                <label>
+                    Organization Description:
+                    <textarea name="organization_description" title="Describe your organization" rows="4"></textarea>
+                </label>
+                <input type="hidden" name="timestamp" id="timestamp" value="">
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </div>
+
+    <div>
+
+        <section class="membership-cards">
+            <h2>Membership Levels</h2>
+            <div class="card" id="np-card">
+                <h3>NP Membership</h3>
+                <button onclick="openModal('np-modal')">Learn More</button>
+            </div>
+            <div class="card" id="bronze-card">
+                <h3>Bronze Membership</h3>
+                <button onclick="openModal('bronze-modal')">Learn More</button>
+            </div>
+            <div class="card" id="silver-card">
+                <h3>Silver Membership</h3>
+                <button onclick="openModal('silver-modal')">Learn More</button>
+            </div>
+            <div class="card" id="gold-card">
+                <h3>Gold Membership</h3>
+                <button onclick="openModal('gold-modal')">Learn More</button>
+            </div>
+        </section>
+
+        <!-- Modals -->
+        <div class="modal" id="np-modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('np-modal')">&times;</span>
+                <h3>NP Membership</h3>
+                <p>No fee. Designed for non-profit organizations.</p>
+            </div>
+        </div>
+        <div class="modal" id="bronze-modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('bronze-modal')">&times;</span>
+                <h3>Bronze Membership</h3>
+                <p>Includes basic event access and training discounts.</p>
+            </div>
+        </div>
+        <div class="modal" id="silver-modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('silver-modal')">&times;</span>
+                <h3>Silver Membership</h3>
+                <p>Includes additional advertising and spotlight opportunities.</p>
+            </div>
+        </div>
+        <div class="modal" id="gold-modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('gold-modal')">&times;</span>
+                <h3>Gold Membership</h3>
+                <p>Premium benefits, including VIP event access and advertising.</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    </main>
+
+    <footer>
+        <p>Contact us: info@chamber.com | (555) 123-4567</p>
+        <p>Franck Tshibala | WDD 231 | Last Modified: <span id="lastModified"></span></p>
+        <p>&copy; <span id="currentYear"></span> Chamber of Commerce. All rights reserved.</p>
+    </footer>
+
+    
+</body>
+</html>
