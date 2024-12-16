@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Franck Tshibala - Web Developer Portfolio">
+    <meta name="author" content="Franck Tshibala">
+    <meta property="og:title" content="Web Developer Portfolio Home Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="chamber/images/main-logo.png">
+    <meta property="og:url" content="https://francktshibala.github.io/wdd231/chamber/directory.html">
+    <title>Franck Tshibala - Web Developer Portfolio</title>
+    <link rel="icon" href="images/favicon-32x32.png">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <script defer src="scripts/projects.js"></script>
+</head>
+<body>
+    <header>
+        <div class="top-header">
+                <img src="images/main-logo.webp" alt="Franck's main logo">
+                <div>
+                    <h1>Franck Tshibala</h1>
+                    <p>I am a Web Developer</p>
+                  </div>
+            </div>
+            <a id="menu" href="#"></a>
+            <nav>
+            <ul class="navigation">  
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                
+            </ul>
+            </nav>
+    </header>
+
+    <main>
+        <section id="projects">
+            <h2>My Projects</h2>
+            <div id="projects-container" class="projects-grid"></div>
+        </section>
+
+        <!-- Modal for Project Details -->
+        <div id="project-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <div id="modal-details"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentYear"></span>⚽Franck Tshibala⚽| WDD 231 | Sandy Utah
+        </p>
+        <p  id="lastModified">Last Modif ied</p>
+        <p>Contact us: info@chamber.com | (555) 123-4567</p>
+        <p> Chamber of Commerce. All rights reserved.</p>
+    </footer>
+
+    
+</body>
+</html>

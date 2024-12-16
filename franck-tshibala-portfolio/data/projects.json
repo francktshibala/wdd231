@@ -1,0 +1,139 @@
+{
+    "projects":  [
+        {
+            "id": 2,
+            "name": "Web and Computer Programming Certificate",
+            "description": "An interactive web page showcasing completed and ongoing courses in the Web and Computer Programming Certificate program.",
+            "technologies": ["HTML", "CSS", "JavaScript"],
+            "imageUrl": "images/projectone.webp",
+            "githubLink": "https://francktshibala.github.io/wdd231/",
+            "liveLink": "https://francktshibala.github.io/wdd231/",
+            "detailed": {
+                "overview": "Built a responsive course page that dynamically displays details about completed and in-progress courses.",
+                "features": [
+                    "Dynamic filtering of courses by category (WDD, CSE, All)",
+                    "Displays course details including credits, status, and technologies used",
+                    "Responsive layout for various screen sizes",
+                    "Interactive navigation for GitHub and LinkedIn profiles"
+                ],
+                "challenges": [
+                    "Designing a user-friendly and visually appealing interface",
+                    "Implementing dynamic filtering functionality",
+                    "Ensuring compatibility across different browsers and devices"
+                ]
+            }
+        },
+        {
+            "id": 1,
+            "name": "Discover Our Community",
+            "description": "A responsive community page highlighting events, attractions, and calendar information.",
+            "technologies": ["HTML", "CSS", "JavaScript"],
+            "imageUrl": "images/projecttwo.webp",
+            "githubLink": "https://francktshibala.github.io/wdd231/chamber/discover.html",
+            "liveLink": "https://francktshibala.github.io/wdd231/chamber/discover.html",
+            "detailed": {
+                "overview": "Designed an interactive Chamber of Commerce website showcasing upcoming events, local attractions, and scenic highlights.",
+                "features": [
+                    "Event calendar displaying local activities",
+                    "Responsive grid layout for attractions and images",
+                    "Eye-catching visuals for a better user experience",
+                    "Direct navigation to explore community-specific features"
+                ],
+                "challenges": [
+                    "Ensuring proper responsive behavior across devices",
+                    "Maintaining consistent design aesthetics",
+                    "Organizing information in an intuitive manner"
+                ]
+            }
+        },
+        {
+           "id": 3,
+            "name": "Video Library Application",
+            "description": "A C# console application for managing and displaying a collection of videos and comments.",
+            "technologies": ["C#", ".NET"],
+            "imageUrl": "images/projectthree.webp",
+            "githubLink": "https://github.com/francktshibala/cse210-hw/tree/main/foundation/Foundation2",
+            "liveLink": "https://github.com/francktshibala/cse210-hw/tree/main/foundation/Foundation2",
+            "detailed": {
+                "overview": "Developed a C# application to manage videos and their associated comments with detailed output formatting.",
+                "features": [
+                    "Ability to add and display videos with metadata (title, author, duration)",
+                    "Support for associating comments with videos",
+                    "Formatted output for video details and user comments"
+                ],
+                "challenges": [
+                    "Creating a clean object-oriented design with classes for video and comment",
+                    "Ensuring proper formatting for terminal output",
+                    "Implementing dynamic comment handling"
+                ]
+            }
+        },
+
+        {
+            "id": 5,
+            "name": "Personal Expense Tracker",
+            "description": "A Python-based console application for tracking and summarizing personal expenses.",
+            "technologies": ["Python", "CSV"],
+            "imageUrl": "images/projectsix.webp",
+            "githubLink": "https://github.com/francktshibala/python-expense-tracker",
+            "liveLink": "",
+            "detailed": {
+                "overview": "Developed a Python application to log, categorize, and generate reports on personal expenses.",
+                "features": [
+                    "Ability to log expenses with category, amount, and date",
+                    "Summarization of expenses by category",
+                    "Expense report generation for a specified date range"
+                ],
+                "challenges": [
+                    "Parsing and handling CSV files for expense data storage",
+                    "Designing a user-friendly terminal interface",
+                    "Ensuring accurate date handling and filtering"
+                ]
+            }
+        },
+        {
+            "id": 2,
+            "name": "Temple Album",
+            "description": "A photo gallery featuring temples with detailed information on location, dedication dates, and sizes.",
+            "technologies": ["HTML", "CSS", "JavaScript"],
+            "imageUrl": "images/projectfour.webp",
+            "githubLink": "https://francktshibala.github.io/wdd131/week04/filtered-temples.html",
+            "liveLink": "https://francktshibala.github.io/wdd131/week04/filtered-temples.html",
+            "detailed": {
+                "overview": "Built a visually appealing album that categorizes temples by regions and sizes with key details.",
+                "features": [
+                    "Displays temple images with location and specifications",
+                    "Interactive categories for old, new, large, and small temples",
+                    "Responsive design to enhance user accessibility"
+                ],
+                "challenges": [
+                    "Integrating dynamic sorting features",
+                    "Optimizing the gallery for fast loading",
+                    "Adapting layouts for small screens"
+                ]
+            }
+        },
+        {
+            "id": 4,
+            "name": "Order Management System",
+            "description": "A C# console application to simulate order processing, including customer and shipping details.",
+            "technologies": ["C#", ".NET"],
+            "imageUrl": "images/projectfive.webp",
+            "githubLink": "https://github.com/francktshibala/cse210-hw/tree/main/foundation/Foundation3",
+            "liveLink": "https://github.com/francktshibala/cse210-hw/tree/main/foundation/Foundation3",
+            "detailed": {
+                "overview": "Implemented an order management system in C# to process orders, manage customers, and generate packing labels.",
+                "features": [
+                    "Customer creation with address details",
+                    "Order creation with products and pricing",
+                    "Packing and shipping label generation"
+                ],
+                "challenges": [
+                    "Designing a modular and reusable class structure",
+                    "Handling different shipping formats for international customers",
+                    "Accurately calculating order totals with multiple products"
+                ]
+            }
+        }
+    ]
+}
